@@ -45,7 +45,7 @@ function NekoCard({id}) {
   return (
     <div style={card(point)}>
       <div style={cardName}>{name}</div>
-      <img src={imgsrc} height='180px'/>
+      <img src={imgsrc} height='160px'/>
       <div style={cardPoint}>{point} POINT</div>
       {(shortagePoint > 0)
         ? <div style={{textAlign: 'center'}}>{shortagePoint} POINT 不足</div>
@@ -77,7 +77,7 @@ const card = (point) => ({
   display       : 'flex',
   flexDirection : 'column',
   justifyContent: 'space-between',
-  width         : '180px',
+  width         : '160px',
   margin        : '3px',
   marginTop     : '20px',
   background    : pointToColor(point),

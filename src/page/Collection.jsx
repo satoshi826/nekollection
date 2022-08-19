@@ -1,13 +1,13 @@
 import React from 'react'
 import {useRecoilState, useRecoilValue} from 'recoil'
-import {DndContext, PointerSensor, TouchSensor, useSensor, useSensors} from '@dnd-kit/core'
+import {DndContext, MouseSensor, TouchSensor, useSensor, useSensors} from '@dnd-kit/core'
 import {SortableContext, useSortable, arrayMove} from '@dnd-kit/sortable'
 import {CSS} from '@dnd-kit/utilities'
 import {collectionState} from '../states'
 
 export default function CollectionPage() {
 
-  const sensors = useSensors(useSensor(PointerSensor), useSensor(TouchSensor))
+  const sensors = useSensors(useSensor(TouchSensor), useSensor(MouseSensor))
   const [collectionList, setCollectionList] = useRecoilState(collectionState)
 
   const handleDragEnd = (event) => {
@@ -54,7 +54,7 @@ function NekoCard({id}) {
   return (
     <div style={{...card(point), ...movable}} ref={setNodeRef} {...attributes} {...listeners}>
       <div style={cardName} >{name}</div>
-      <img src={imgsrc} height='180px'/>
+      <img src={imgsrc} height='160px'/>
       <div style={cardPoint}>{point} POINT</div>
     </div>
   )
@@ -83,7 +83,7 @@ const card = (point) => ({
   display       : 'flex',
   flexDirection : 'column',
   justifyContent: 'space-between',
-  width         : '180px',
+  width         : '160px',
   margin        : '3px',
   marginTop     : '20px',
   background    : pointToColor(point),

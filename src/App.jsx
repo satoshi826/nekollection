@@ -134,16 +134,16 @@ const head = {
 }
 
 const headTitle = {
-  fontSize: '2rem',
+  fontSize: '1.5rem',
   color   : '#fff'
 }
 
 const headPoint = {
-  width    : '100px',
-  margin   : '20px',
+  width    : '60px',
+  margin   : '10px',
   padding  : '5px',
   textAlign: 'center',
-  fontSize : '1.2rem',
+  fontSize : '1rem',
   color    : '#fff',
   border   : '1px solid #eee',
 }
