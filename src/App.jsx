@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import {Link, useLocation, Route} from 'wouter'
+import {Link, useLocation, Route, Redirect} from 'wouter'
 import {useRecoilValue} from 'recoil'
 import {pointState} from './states'
 
@@ -28,6 +28,9 @@ function Main() {
       <Route path="/game" component={GamePage}/>
       <Route path="/shop" component={ShopPage}/>
       <Route path="/collection" component={CollectionPage}/>
+      <Route path="" >
+        <Redirect to="/collection" />
+      </Route>
     </div>
   )
 }
