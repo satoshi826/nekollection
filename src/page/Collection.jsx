@@ -52,8 +52,8 @@ function NekoCard({id}) {
   }
 
   return (
-    <div style={{...card(point), ...movable}} ref={setNodeRef} {...attributes} {...listeners}>
-      <div style={cardName} >{name}</div>
+    <div style={{...card(point), ...movable}} ref={setNodeRef}>
+      <div style={cardName} {...attributes} {...listeners}>{name}</div>
       <img src={imgsrc} height='160px'/>
       <div style={cardPoint}>{point} POINT</div>
     </div>

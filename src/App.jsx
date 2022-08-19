@@ -51,7 +51,7 @@ function Header({setIsOpenSide}) {
 
 function Hamburger({setIsOpenSide}) {
   return(
-    <div style={{width: '60px', margin: '20px', userSelect: 'none'}} onClick={() => setIsOpenSide((isOpen) => !isOpen)}>
+    <div style={{width: '50px', marginLeft: '20px', userSelect: 'none'}} onClick={() => setIsOpenSide((isOpen) => !isOpen)}>
       <svg
         width={40}
         height={60}
@@ -142,11 +142,11 @@ const headTitle = {
 }
 
 const headPoint = {
-  width    : '70px',
+  width    : '78px',
   margin   : '10px',
   padding  : '5px',
   textAlign: 'center',
-  fontSize : '1.2rem',
+  fontSize : '1.1rem',
   color    : '#fff',
   border   : '1px solid #eee',
 }

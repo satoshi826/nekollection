@@ -142,22 +142,24 @@ const gamePage = {
   overflow           : 'auto',
   minwidth           : '100%',
   height             : '100%',
+  paddingTop         : '10px',
 }
 
 const container = {
-  padding : '20px',
-  minwidth: '100%',
+  paddingLeft : '20px',
+  paddingRight: '20px',
+  minwidth    : '100%',
 }
 
 const title = {
-  fontSize: '2rem',
+  fontSize: '1.8rem',
   color   : '#fff',
 }
 
 //-----------------------------------
 
 const questionText = {
-  maxHeight : '250px',
+  maxHeight : '200px',
   minwidth  : '100%',
   margin    : '5px',
   padding   : '20px',
@@ -175,7 +177,7 @@ const answerList = {
   flexWrap      : 'wrap',
   justifyContent: 'space-between',
   background    : '#444',
-  maxHeight     : '250px',
+  maxHeight     : '200px',
   minwidth      : '100%',
   overflow      : 'auto'
 }
