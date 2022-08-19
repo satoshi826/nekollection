@@ -62,7 +62,7 @@ function NekoCard({id}) {
 
 function Spacer() {
   return new Array(6).fill().map((_, i) =>
-    <div key={i} style={{width: '180px', margin: '3px'}}/>
+    <div key={i} style={{width: '160px', margin: '3px'}}/>
   )
 }
 
