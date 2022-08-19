@@ -107,7 +107,6 @@ function Nav({title, href}) {
 
 const grid = (isOpenSide) => ({
   display            : 'grid',
-  // overflow           : 'hidden',
   gridTemplateRows   : '70px auto',
   gridTemplateColumns: isOpenSide ? '210px 1fr' : '0px 1fr',
   gridTemplateAreas  : `
