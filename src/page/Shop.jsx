@@ -11,12 +11,14 @@ export default function ShopPage() {
   const shopIDList = useRecoilValue(shopIDListState)
   console.log({shopIDList})
 
-  return <div style={shopPage}>
-    {shopIDList.map(id =>
-      <NekoCard key={id} id={id}/>
-    )}
-    <Spacer/>
-  </div>
+  return (
+    <div style={shopPage}>
+      {shopIDList.map(id =>
+        <NekoCard key={id} id={id}/>
+      )}
+      <Spacer/>
+    </div>
+  )
 }
 
 function NekoCard({id}) {
